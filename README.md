@@ -67,10 +67,10 @@ fsp local [options] <htmlFile1 htmlFile2 ...>
 ``` shell
 fsp init 
 ```
-> 在根目录下生成fspconfig.js文件
+> 在根目录下生成fspconfig.json文件
 
-#### 2、完善fspconfig.js文件
-``` javascript
+#### 2、完善fspconfig.json文件
+``` json
 {
     /**
      * 本地font存放路径
@@ -97,7 +97,6 @@ fsp init
 ``` shell
 fsp run
 ```
->示例文件下载： [Demo.zip ](http://allan5.com/font-spider-plus/assets/demo.zip "fsp示例文件")
 
 ## 相关链接
 
