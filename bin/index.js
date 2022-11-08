@@ -96,10 +96,10 @@ function reduce(array) {
 //初始化文件
 function initFile() {
 
-    fs.writeFile(dir+'/fspconfig.js', fspconfig(), (err) => {
+    fs.writeFile(dir+'/fspconfig.json', fspconfig(), (err) => {
         if (err) throw err;
-        console.log(chalk.bgGreen.black('fspconfig.js配置文件已生成'))
-        console.log('配置' +chalk.green(' fspconfig.js ') + '后，执行' + chalk.green(' fsp run ') +'即可运行主程序')
+        console.log(chalk.bgGreen.black('fspconfig.json配置文件已生成'))
+        console.log('配置' +chalk.green(' fspconfig.json ') + '后，执行' + chalk.green(' fsp run ') +'即可运行主程序')
     });
 }
 //初始完检查配置
@@ -107,7 +107,7 @@ function checkFile() {
     let r = {};
     r.console = '';
     r.status = false;
-    const c = dir+'/fspconfig.js';
+    const c = dir+'/fspconfig.json';
 
     if(!fileExists.sync(c)){
         r.console = '请先执行 "fsp init" 初始化相关依赖';
